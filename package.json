@@ -1,0 +1,29 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Creates SVG file logos",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VZachary13/friendly-chainsaw.git"
+  },
+  "keywords": [
+    "blinked"
+  ],
+  "author": "VZ13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VZachary13/friendly-chainsaw/issues"
+  },
+  "homepage": "https://github.com/VZachary13/friendly-chainsaw#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
