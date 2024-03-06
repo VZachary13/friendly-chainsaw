@@ -1,2 +1,6 @@
+# folders
+/examples
 /node_modules
+
+# files
 package-lock.json
