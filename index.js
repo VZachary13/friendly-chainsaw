@@ -12,19 +12,24 @@ function init(){
                 const newSquare = new Square(data.text, data.color)
                 fs.writeFile('./examples/shape.SVG', newSquare.render(), (err) => {
                     if(err) console.log(err);
-                    console.log('Shape generated successfully!')
+                    console.log('Square generated successfully!')
                 })
                 break;
         
             case 'Circle':
                 const newCircle = new Circle(data.text, data.color)
-                console.log(newCircle);
+                fs.writeFile('./examples/shape.SVG', newCircle.render(), (err) => {
+                    if(err) console.log(err);
+                    console.log('Circle generated successfully!')
+                })
                 break;
         
             case 'Triangle':
                 const newTriangle = new Triangle(data.text, data.color)
-                console.log(newTriangle);
-                break;
+                fs.writeFile('./examples/shape.SVG', newTriangle.render(), (err) => {
+                    if(err) console.log(err);
+                    console.log('Triangle generated successfully!')
+                })
         
             default:
                 break;
