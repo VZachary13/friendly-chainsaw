@@ -1,21 +1,29 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Shapes = require('./lib/shapes.js');
-const questions = require('./lib/questions.js');
+const Square = require('./lib/Square');
+const Circle = require('./lib/Circle');
+const Triangle = require('./lib/Triangle');
+const questions = require('./lib/questions');
 
 function init(){
     inquirer.prompt(questions).then((data) => {
         switch (data.shape) {
             case 'Square':
-                console.log(data);
+                const newSquare = new Square(data.text, data.color)
+                fs.writeFile('./examples/shape.SVG', newSquare.render(), (err) => {
+                    if(err) console.log(err);
+                    console.log('Shape generated successfully!')
+                })
                 break;
         
             case 'Circle':
-                console.log(data);
+                const newCircle = new Circle(data.text, data.color)
+                console.log(newCircle);
                 break;
         
             case 'Triangle':
-                console.log(data);
+                const newTriangle = new Triangle(data.text, data.color)
+                console.log(newTriangle);
                 break;
         
             default:
