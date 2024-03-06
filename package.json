@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/VZachary13/friendly-chainsaw#readme",
   "dependencies": {
+    "inquirer": "^8.2.4",
     "jest": "^29.7.0"
   }
 }
