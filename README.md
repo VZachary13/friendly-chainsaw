@@ -11,11 +11,14 @@ Navigate to the server.js file and type 'npm i' and await installation completio
 ## Screenshot
 
 ![Project Screenshot](./public/assets/images/image.png)
+
 ### deployed page --> N/A
 
 ## Usage
 
 After npm i installation finishes simply type 'node index.js' and follow the generator prompts
+
+Video Walkthrough - https://drive.google.com/file/d/1KbAn11y8AjouN-1Ym5hV-IRf7tR9GMst/view
 
 ## License
 
